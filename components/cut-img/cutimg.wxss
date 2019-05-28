@@ -1,0 +1,88 @@
+.picBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.picBoxTig {
+    position: fixed;
+    top: 186rpx;
+    left: 50%;
+    width: 600rpx;
+    height: 600rpx;
+    margin: 0 0 0 -300rpx;
+    overflow: hidden;
+    zoom: 1;
+    z-index: 100;
+    border: 2rpx solid #ed2e1b;
+    background: #fff;
+}
+
+.picBox_arraw {
+    position: fixed;
+    width: 32rpx;
+    height: 32rpx;
+    background: #ed2e1b;
+    top: 180rpx;
+    left: 69rpx;
+}
+
+.picBox_arraw.left_b {
+    top: 764rpx;
+    left: 69rpx;
+}
+
+.picBox_arraw.right_t {
+    top: 180rpx;
+    left: 653rpx;
+}
+
+.picBox_arraw.right_b {
+    top: 764rpx;
+    left: 653rpx;
+}
+
+.picImage {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.bottom_cut_icon {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 28rpx;
+    height: 94rpx;
+}
+
+.cut_icon_a {
+    line-height: 94rpx;
+    height: 94rpx;
+    color: #fff;
+    flex-flow: 1;
+    flex-grow: 1;
+    margin: 0 60rpx;
+    text-align: center;
+}
+
+.picBox_txt {
+    height: 70rpx;
+    line-height: 70rpx;
+    position: fixed;
+    top: 835rpx;
+    left: 0;
+    right: 0;
+    font-size: 32rpx;
+    text-align: center;
+    color: #e8e8e8;
+}

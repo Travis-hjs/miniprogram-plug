@@ -1,0 +1,20 @@
+<!-- 裁截图片 -->
+<view class="cut-img-box">
+    <cover-view class="picBox" wx:if="{{ showPicBox }}">
+        <cover-view class="picBox_arraw left_t"></cover-view>
+        <cover-view class="picBox_arraw right_t"></cover-view>
+        <cover-view class="picBox_arraw left_b"></cover-view>
+        <cover-view class="picBox_arraw right_b"></cover-view>
+        <cover-view class="picBoxTig" catchtouchmove="moveTouch" catchtouchstart="moveStart" catchtouchend="endTouch">
+            <cover-image src="{{ src }}" class="picImage" style="width: {{ width }}px; height: {{ height }}px; margin:{{ top }}px 0 0 {{ left }}px"></cover-image>
+        </cover-view>
+        <cover-view class="picBox_txt">图片比例都为正方形比例</cover-view>
+        <cover-view class="bottom_cut_icon">
+            <cover-view class="cut_icon_a" catchtap="canvasCancel">取消</cover-view>
+            <cover-view class="cut_icon_a" catchtap="canvasReset">还原</cover-view>
+            <cover-view class="cut_icon_a" catchtap="canvasSubmit">完成</cover-view>
+        </cover-view>
+    </cover-view>
+    <!-- canvas 放在组件里面会找不到, 所以只能放在外部 -->
+    <!-- <canvas class="canvas-cutbox" style="width:300px; height:300px" canvas-id="cutCanvas"/> -->
+</view>
