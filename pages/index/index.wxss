@@ -1,0 +1,8 @@
+.page { padding: 30rpx; }
+.upload-img{ width: 100%; background-color: #fff; padding: 20rpx 0;}
+.upload-img .add-icon{ margin: 0 auto 30rpx; width: 300rpx; height: 300rpx; color: #ccc; border: dashed #ccc 1px; font-size: 100rpx; line-height: 300rpx; text-align: center; }
+.upload-img .title{ text-align: center; margin-bottom: 20rpx; }
+.upload-img .list{ width: 100%; padding-top: 20rpx; }
+.upload-img .list .img-box{ width: 100%; padding: 30rpx; margin-bottom: 20rpx; position: relative; }
+.upload-img .list .img-box .img{ width: 100%; }
+.upload-img .list .img-box .close{ position: absolute; top: -5px; right: 0px; }

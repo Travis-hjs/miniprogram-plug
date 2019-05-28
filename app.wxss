@@ -1,0 +1,72 @@
+/* 标签重置 */
+view, image, input, button, textarea, navigator{ box-sizing: border-box; }
+image, input, button, textarea, picker{ display: block; }
+input, button{ padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; }
+input::after, button::after{ border: none; }
+
+/* flex-布局 */
+.flex{ display: flex; flex-wrap: wrap; }
+.f1{ flex: 1; }
+.f2{ flex: 2; }
+.f3{ flex: 3; }
+/* 垂直居中 */
+.flex_vertical{ align-items: center; }
+/* 水平居中 */
+.flex_center{ justify-content: center; }
+/* 右对齐 */
+.flex_right{ flex-direction: row; justify-content: flex-end; }
+
+/* 字体 */
+.st{ font-size: 44rpx; line-height: 44rpx; }
+.s1{ font-size: 30rpx; line-height: 30rpx; }
+.s2{ font-size: 28rpx; line-height: 28rpx; }
+.s3{ font-size: 24rpx; line-height: 24rpx; }
+
+/* 字体样式 */
+.bold{ font-weight: bold; }
+
+/* 颜色主题 */
+.dark{ background-color: #010101; }
+.white{ color: #fff; }
+.black{ color: #333; }
+.red{ color: #f0311d; }
+.gray{ color: #757575; }
+.pink{ color: #ff4582; }
+.orange{ color: #fe9000; }
+.green{ color: #09bb07; }
+
+/* 文本超出... */
+.ellipsis{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ellipsis_2{ overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; text-overflow: ellipsis; }
+.ellipsis_3{ overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; text-overflow: ellipsis; }
+
+/* 卡片阴影 */
+.card{ box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12); }
+
+/* 卡片式圆角 */
+.radius{ border-radius: 10rpx; }
+.radius_top{ border-top-left-radius: 10rpx; border-top-right-radius: 10rpx; }
+.radius_bottom{ border-bottom-left-radius: 10rpx; border-bottom-right-radius: 10rpx; }
+
+/* 整体页面 */
+.page{ width: 100%; box-sizing: border-box; background-color: #eee; min-height: 100vh; font-family: Arial, Helvetica, sans-serif; }
+
+/* 底部固定按钮 */
+.bottom{ width: 100%; height: 110rpx; position: fixed; padding: 0 20rpx; display: flex; align-items: center; bottom: 0; left: 0; background-color: #fff; z-index: 10; }
+.bottom .btn{ width: 100%; height: 88rpx; border-radius: 10rpx; background-color: #fafafa; color: #ababab; font-size: 30rpx; line-height: 88rpx; text-align: center; }
+.bottom .btn_on{ background-color: #f0311d; color: #fff; }
+
+/* iphoneX 吸底适配 */
+.iphonex_bottom_btn{ bottom: 52rpx !important; }
+.iphonex_bottom_btn::after{ content: ""; position: absolute; left: 0; bottom: 0; width: 100%; transform: translateY(100%); height: 52rpx; background: #fff; z-index: 10; }
+.iphonex_bottom_view{ width: 100%; height: 52rpx; }
+
+/* 滑动出现动画 */
+.slideY{ animation: slide-y 0.5s; }
+@keyframes slide-y {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+/* 裁剪canvas组件 */
+.canvas-cutbox{ position: fixed; top: -100vh; left: 0; }

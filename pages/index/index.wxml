@@ -1,0 +1,16 @@
+<view class="page">
+    <view class="upload-img card radius">
+        <view class="st black title">上传图片插件</view>
+        <view class="add-icon radius" bindtap="chooseImage">+</view>
+        <view class="list">
+            <view class="img-box radius" wx:for="{{ imgList }}" wx:key="index">
+                <icon class="close" type="clear" size="23" color="red" data-index="{{ index }}" bindtap="removeImg"></icon>
+                <image class="img" src="{{ item }}" mode="widthFix" />
+            </view>
+        </view>
+    </view>
+      
+</view>
+<cutimg id="cutProImage" :picWidth="300" :picHeight="300" bind:getFilePath="cutImg"></cutimg>
+<!-- 注意 这里是裁剪组件必须要搭配 canvas-id ="cutCanvas" 使用，而且不能写在组件里面  -->
+<canvas class="canvas-cutbox" style="width:300px; height:300px" canvas-id="cutCanvas"/>
