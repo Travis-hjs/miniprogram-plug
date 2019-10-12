@@ -73,6 +73,7 @@
     flex-grow: 1;
     margin: 0 60rpx;
     text-align: center;
+    font-size: 32rpx;
 }
 
 .picBox_txt {

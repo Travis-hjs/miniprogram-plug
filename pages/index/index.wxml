@@ -1,6 +1,6 @@
 <view class="page">
     <view class="upload-img card radius">
-        <view class="st black title">上传图片插件</view>
+        <view class="st black title">图片裁剪插件</view>
         <view class="add-icon radius" bindtap="chooseImage">+</view>
         <view class="list">
             <view class="img-box radius" wx:for="{{ imgList }}" wx:key="index">
